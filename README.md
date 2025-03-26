@@ -1,4 +1,4 @@
-# 🚀 Customer spending suggestions and feedback
+# 🚀 AI Driven - Customer spending suggestions and feedback
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
