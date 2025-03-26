@@ -48,19 +48,19 @@ pip – Python package manager to install dependencies (pandas).
 Text Editor/IDE (VS Code, PyCharm, Jupyter Notebook) – Useful for writing and debugging the script.
 
 ## 🚧 Challenges We Faced
-Identifying Subscriptions Accurately
+**Identifying Subscriptions Accurately**
 
-Challenge: Subscription descriptions vary widely across banks and providers. A simple keyword search (NETFLIX|SPOTIFY|HULU) may not capture all subscriptions.
+<u>Challenge:</u> Subscription descriptions vary widely across banks and providers. A simple keyword search (NETFLIX|SPOTIFY|HULU) may not capture all subscriptions.
 
-Solution: Used case-insensitive str.contains() for broader detection but acknowledged the need for a more dynamic approach, such as integrating a financial API or machine learning-based categorization.
+**Solution:** Used case-insensitive str.contains() for broader detection but acknowledged the need for a more dynamic approach, such as integrating a financial API or machine learning-based categorization.
 
-Handling Missing or Inconsistent Data
+**Handling Missing or Inconsistent Data**
 
-Challenge: Real-world transaction data often has missing values (NaN) or inconsistent category labels.
+**Challenge:** Real-world transaction data often has missing values (NaN) or inconsistent category labels.
 
-Solution: Used na=False in str.contains() to prevent errors and ensured spending categories were properly grouped before analysis.
+**Solution:** Used na=False in str.contains() to prevent errors and ensured spending categories were properly grouped before analysis.
 
-Determining "High Spending" Categories
+**Determining "High Spending" Categories**
 
 Challenge: Defining what qualifies as high spending is subjective—just comparing with the mean might not be ideal. Some necessary expenses (e.g., rent) will always be high.
 
@@ -69,7 +69,7 @@ Solution: Used mean spending as a simple benchmark but acknowledged the need for
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone [https://github.com/your-repo.git](https://github.com/ewfx/aidhp-digital-alchemists.git)
+   git clone https://github.com/your-repo.git](https://github.com/ewfx/aidhp-digital-alchemists.git
    ```
 2. Install dependencies  
    ```sh
@@ -84,6 +84,6 @@ Solution: Used mean spending as a simple benchmark but acknowledged the need for
 - 🔹 Backend: Python
 
 ## 👥 Team
-- ** Aditya Akkinapragada ** - [GitHub](#) | [LinkedIn](#)
-- ** Lokesh Sajjan ** - [GitHub](#) | [LinkedIn](#)
+- **Aditya Akkinapragada** - [GitHub](#) | [LinkedIn](#)
+- **Lokesh Sajjan** - [GitHub](#) | [LinkedIn](#)
   
