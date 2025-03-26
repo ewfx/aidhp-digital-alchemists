@@ -1,4 +1,4 @@
-# 🚀 Digitial Alchemists - Customer spending suggestions and feedback
+# 🚀 Customer spending suggestions and feedback
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
