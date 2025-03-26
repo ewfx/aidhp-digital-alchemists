@@ -1,4 +1,4 @@
-# 🚀 Project Name
+# 🚀 Digitial Alchemists - Customer spending suggestions and feedback
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
