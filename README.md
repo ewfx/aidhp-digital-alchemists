@@ -34,9 +34,9 @@ Find any bugs and rewrite all the code to fix the bugs. Do not add any new comme
 ## 🛠️ How We Built It
 This code primarily utilizes Python and the pandas library for data analysis.
 
-Technologies & Libraries Used
-Python – A general-purpose programming language used for data processing and analysis.
-pandas – A powerful Python library for data manipulation, primarily used here for:
+**Technologies & Libraries Used**
+**Python** – A general-purpose programming language used for data processing and analysis.
+**pandas** – A powerful Python library for data manipulation, primarily used here for:
 
 DataFrames to store and manage transaction data.
 Grouping & Aggregation to compute category-wise spending and detect recurring transactions.
@@ -50,15 +50,15 @@ Text Editor/IDE (VS Code, PyCharm, Jupyter Notebook) – Useful for writing and 
 ## 🚧 Challenges We Faced
 **Identifying Subscriptions Accurately**
 
-<u>Challenge:</u> Subscription descriptions vary widely across banks and providers. A simple keyword search (NETFLIX|SPOTIFY|HULU) may not capture all subscriptions.
+Challenge: Subscription descriptions vary widely across banks and providers. A simple keyword search (NETFLIX|SPOTIFY|HULU) may not capture all subscriptions.
 
-**Solution:** Used case-insensitive str.contains() for broader detection but acknowledged the need for a more dynamic approach, such as integrating a financial API or machine learning-based categorization.
+Solution: Used case-insensitive str.contains() for broader detection but acknowledged the need for a more dynamic approach, such as integrating a financial API or machine learning-based categorization.
 
 **Handling Missing or Inconsistent Data**
 
-**Challenge:** Real-world transaction data often has missing values (NaN) or inconsistent category labels.
+Challenge: Real-world transaction data often has missing values (NaN) or inconsistent category labels.
 
-**Solution:** Used na=False in str.contains() to prevent errors and ensured spending categories were properly grouped before analysis.
+Solution: Used na=False in str.contains() to prevent errors and ensured spending categories were properly grouped before analysis.
 
 **Determining "High Spending" Categories**
 
@@ -86,4 +86,6 @@ Solution: Used mean spending as a simple benchmark but acknowledged the need for
 ## 👥 Team
 - **Aditya Akkinapragada** - [GitHub](#) | [LinkedIn](#)
 - **Lokesh Sajjan** - [GitHub](#) | [LinkedIn](#)
+- **Praveen Patil** - [GitHub](#) | [LinkedIn](#)
+- **Suresh Gembali** - [GitHub](#) | [LinkedIn](#)
   
