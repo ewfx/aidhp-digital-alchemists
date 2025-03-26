@@ -25,7 +25,7 @@ We want to create an AI based solution for banking customer spending suggestions
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-We want to create an AI based solution for banking customer spending suggestions and feedback, focusing on subscriptions and discretionary spending to help save costs.
+Empowering customers with AI-driven insights to take control of their spending, optimize subscriptions, and achieve smarter financial savings effortlessly.
 
 ## ⚙️ What It Does
 This code analyzes a user's transactions, detects recurring subscriptions, and provides personalized suggestions to save money. It flags high spending categories and encourages users to review and cancel unnecessary subscriptions. Let me know if you'd like enhancements, such as integrating AI-powered spending predictions or automated alerts. 🚀
