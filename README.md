@@ -14,7 +14,8 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+
+We want to create an AI based solution for banking customer spending suggestions and feedback, focusing on subscriptions and discretionary spending to help save costs.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
