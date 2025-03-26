@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def detect_subscriptions(transactions):
     subscriptions = transactions[transactions['Description'].str.contains(
@@ -25,33 +26,37 @@ def suggest_savings(transactions):
     
     return suggestions
 
-# Sample Data
-data = {
-    'Date': pd.date_range(start='2024-01-01', periods=30, freq='W'),
-    'Description': [
-        'NETFLIX', 'GROCERIES', 'SPOTIFY', 'DINING', 'HULU', 'GAS', 'AMAZON PRIME', 'RENT',
-        'APPLE MUSIC', 'SHOPPING', 'UBER', 'ELECTRIC BILL', 'WATER BILL', 'GYM MEMBERSHIP',
-        'MOVIE THEATER', 'COFFEE', 'FAST FOOD', 'SUBSCRIPTION BOX', 'CAR PAYMENT',
-        'INSURANCE', 'PHONE BILL', 'INTERNET BILL', 'PUBLIC TRANSPORT', 'BOOKSTORE',
-        'CLOTHING', 'PHARMACY', 'AIRLINE TICKET', 'HOTEL', 'GAMING', 'CHARITY DONATION'
-    ],
-    'Category': [
-        'Entertainment', 'Groceries', 'Entertainment', 'Dining', 'Entertainment', 'Transport', 'Entertainment', 'Housing',
-        'Entertainment', 'Shopping', 'Transport', 'Utilities', 'Utilities', 'Health & Fitness',
-        'Entertainment', 'Dining', 'Dining', 'Shopping', 'Transport',
-        'Insurance', 'Utilities', 'Utilities', 'Transport', 'Shopping',
-        'Shopping', 'Health', 'Travel', 'Travel', 'Entertainment', 'Charity'
-    ],
-    'Amount': [15.99, 120.50, 9.99, 45.00, 14.99, 30.00, 12.99, 1000.00, 9.99, 80.00, 
-               25.50, 60.75, 40.25, 35.00, 50.00, 5.99, 12.49, 22.99, 400.00, 150.00,
-               90.00, 85.00, 20.00, 30.00, 75.00, 45.00, 500.00, 600.00, 59.99, 100.00]
-}
+# Generate a large sample dataset
+np.random.seed(42)
+dates = pd.date_range(start='2024-01-01', periods=200, freq='D')
+descriptions = [
+    'NETFLIX', 'GROCERIES', 'SPOTIFY', 'DINING', 'HULU', 'GAS', 'AMAZON PRIME', 'RENT',
+    'APPLE MUSIC', 'SHOPPING', 'UBER', 'ELECTRIC BILL', 'WATER BILL', 'GYM MEMBERSHIP',
+    'MOVIE THEATER', 'COFFEE', 'FAST FOOD', 'SUBSCRIPTION BOX', 'CAR PAYMENT',
+    'INSURANCE', 'PHONE BILL', 'INTERNET BILL', 'PUBLIC TRANSPORT', 'BOOKSTORE',
+    'CLOTHING', 'PHARMACY', 'AIRLINE TICKET', 'HOTEL', 'GAMING', 'CHARITY DONATION',
+    'RESTAURANT', 'TAXI', 'MEDICAL BILL', 'EDUCATION', 'PARKING', 'HOME MAINTENANCE',
+    'FURNITURE', 'ELECTRONICS', 'GIFT', 'PET CARE'
+]
+categories = [
+    'Entertainment', 'Groceries', 'Entertainment', 'Dining', 'Entertainment', 'Transport', 'Entertainment', 'Housing',
+    'Entertainment', 'Shopping', 'Transport', 'Utilities', 'Utilities', 'Health & Fitness',
+    'Entertainment', 'Dining', 'Dining', 'Shopping', 'Transport',
+    'Insurance', 'Utilities', 'Utilities', 'Transport', 'Shopping',
+    'Shopping', 'Health', 'Travel', 'Travel', 'Entertainment', 'Charity',
+    'Dining', 'Transport', 'Health', 'Education', 'Transport', 'Home',
+    'Home', 'Electronics', 'Gifts', 'Pets'
+]
+amounts = np.random.uniform(5, 2000, size=500).round(2)
 
+large_data = pd.DataFrame({
+    'Date': np.random.choice(dates, size=500, replace=True),
+    'Description': np.random.choice(descriptions, size=500, replace=True),
+    'Category': np.random.choice(categories, size=500, replace=True),
+    'Amount': amounts
+})
 
-df = pd.DataFrame(data)
-
-recommendations = suggest_savings(df)
+recommendations = suggest_savings(large_data)
 
 for rec in recommendations:
     print(rec)
-    
