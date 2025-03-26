@@ -54,3 +54,4 @@ recommendations = suggest_savings(df)
 
 for rec in recommendations:
     print(rec)
+    
