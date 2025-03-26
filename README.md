@@ -35,7 +35,9 @@ Find any bugs and rewrite all the code to fix the bugs. Do not add any new comme
 This code primarily utilizes Python and the pandas library for data analysis.
 
 **Technologies & Libraries Used**
+
 **Python** – A general-purpose programming language used for data processing and analysis.
+
 **pandas** – A powerful Python library for data manipulation, primarily used here for:
 
 DataFrames to store and manage transaction data.
